@@ -134,6 +134,17 @@ csharp_other_braces = next_line
 csharp_allow_comment_after_lbrace = false
 csharp_empty_block_style = multiline
 
+## Code Style
+
+csharp_for_built_in_types = use_var
+csharp_for_simple_types = use_var
+csharp_for_other_types = use_var
+csharp_prefer_explicit_discard_declaration = true
+csharp_instance_members_qualify_members = none
+csharp_instance_members_qualify_declared_in = this_class
+csharp_default_private_modifier = explicit
+csharp_default_internal_modifier = explicit
+
 ## Line Breaks
 
 [*.cs]
@@ -240,3 +251,13 @@ csharp_space_before_nullable_mark = false
 csharp_space_around_alias_eq = true
 csharp_space_before_trailing_comment = true
 csharp_space_after_operator_keyword = true
+
+## Resharper
+
+[*.cs]
+resharper_check_namespace_highlighting = do_not_show
+resharper_inconsistent_naming_highlighting = do_not_show
+resharper_member_can_be_private_global_highlighting = do_not_show
+resharper_unused_member_global_highlighting = do_not_show
+resharper_introduce_optional_parameters_global_highlighting = do_not_show
+resharper_delegate_subtraction_highlighting = do_not_show
